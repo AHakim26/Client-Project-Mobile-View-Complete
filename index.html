@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Success Portal</title>
+</head>
+<body>
+    <a href="#main-content">Skip to Main Content</a>
+    <header>
+
+        <img src="images/UM_images/UMSI_logo-blueM-blue-text.png" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="page_1.html">Academic Support at UMSI</a></li>
+                <li><a href="page_2.html">UMSI Tutoring</a></li>
+                <li><a href="page_3.html">Student Success</a></li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+    <main id="main-content">
+
+        <section>
+            <h1>Welcome to the UM Grad Success Navigator</h1>
+            <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
+            <figure>
+                <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+                <figcaption>UMSI out in the fall!</figcaption>
+            </figure>
+        </section>
+
+
+
+        <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
+        UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
+    </main>
+    <footer>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p id="currentYear"></p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const yearElement = document.getElementById("currentYear");
+                const currentYear = new Date().getFullYear();
+                yearElement.textContent = currentYear;
+            });
+        </script>
+    </footer>
+    </body>
+</html>
