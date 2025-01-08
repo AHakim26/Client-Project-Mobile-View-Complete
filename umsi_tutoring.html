@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMSI Tutoring & Academic Support</title>
+</head>
+<body>
+    <a href="#main-content">Skip to Main Content</a>
+
+    <header>
+        <img src="images/UM_images/UMSI_logo-blueM-blue-text.png" alt="UMSI Logo">
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="academic_support_at_umsi.html">Academic Support at UMSI</a></li>
+                <li class="active"><a href="umsi_tutoring.html">UMSI Tutoring</a></li>
+                <li><a href="student_success.html">Student Success</a></li>
+            </ul>
+        </nav>
+        <div>
+
+            <h1>UMSI Tutoring</h1>
+
+        </div>
+    </header>
+    <main id="main-content">
+        <section>
+            <article>
+        <div>
+            <p>The Academic Success Team at UMSI is dedicated to supporting students inside and outside of the classroom. This site is dedicated to connecting students to tutoring and academic support resources. Resources available include:</p>
+            <ul>
+                <li>UMSI Peer Tutoring</li>
+                <li>Programming Peer Tutoring</li>
+                <li>Math Peer Tutoring</li>
+                <li>Additional Academic Support Resources</li>
+                <li>Peer-to-Peer Tutor Directory</li>
+            </ul>
+        </div>
+        <div></div>
+
+        <img src="images/nUMSI_DesignJam_02142022_01.jpg" alt="UMSI_DesignJam_02142022_01">
+    </article>
+   </section>
+    </main>
+    <footer>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p id="currentYear"></p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const yearElement = document.getElementById("currentYear");
+                const currentYear = new Date().getFullYear();
+                yearElement.textContent = currentYear;
+            });
+        </script>
+    </footer>
+</body>
+</html>
